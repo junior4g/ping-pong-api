@@ -8,5 +8,5 @@ app.get('/ping', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`App listening at port ${port}`);
+  console.log(`App listening at port ${PORT}`);
 });
