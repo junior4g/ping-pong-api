@@ -3,11 +3,9 @@ services:
   ping-pong-api:
     build: .
     ports:
-      - '3000:3000'
+      - "3000:3000"
     restart: always
     volumes:
       - .:/usr/src/app
-    environment:
-      - NODE_ENV=development
     working_dir: /usr/src/app
-    command: npm start
+    command: node index.js
