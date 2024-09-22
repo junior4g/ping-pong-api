@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello World' });
 });
 
+app.get('/hello', (req, res) => {
+  res.json({ message: 'World' });
+});
+
 app.listen(PORT, () => {
   console.log(`App listening at port ${PORT}`);
 });
